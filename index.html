@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ex.No 02 - HTML5 Form and Media Elements</title>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <h1>CHELSEA REENA U</h1>
+
+    <p>
+        Ex.No 02 - Working With HTML5 Form and Media Elements
+    </p>
+
+    <!-- INTRODUCTION SECTION -->
+    <h2>About Me</h2>
+
+    <div>
+        <img src="myphoto.jpg"
+             alt="My Profile Image"
+             width="200">
+
+        <p>
+            Hello! I am a B.Tech Computer Science and
+            Engineering student specializing in Artificial
+            Intelligence and Machine Learning.
+
+            I am interested in web development, programming
+            and exploring new technologies.
+        </p>
+
+        <a href="https://github.com/Reena2006"
+           target="_blank">
+            Visit My GitHub Profile
+        </a>
+    </div>
+
+    <!-- TABLE SECTION -->
+    <h2>HTML5 Elements</h2>
+
+    <table border="2">
+        <tr>
+            <th>Element</th>
+            <th>Category</th>
+            <th>Purpose</th>
+        </tr>
+
+        <tr>
+            <td>Form</td>
+            <td>Input</td>
+            <td>Collects user information</td>
+        </tr>
+
+        <tr>
+            <td>Audio</td>
+            <td>Media</td>
+            <td>Plays audio files</td>
+        </tr>
+
+        <tr>
+            <td>Video</td>
+            <td>Media</td>
+            <td>Plays video files</td>
+        </tr>
+
+        <tr>
+            <td>Iframe</td>
+            <td>Embedding</td>
+            <td>Displays another webpage</td>
+        </tr>
+    </table>
+
+    <!-- REGISTRATION FORM -->
+    <h2>College Event Registration Form</h2>
+
+    <form action="#" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password"
+                       id="password"
+                       name="password">
+            </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <p>
+                <label for="department">Department:</label>
+
+                <select id="department" name="department">
+                    <option value="">Select Department</option>
+                    <option value="cse">CSE</option>
+                    <option value="aiml">AI & ML</option>
+                    <option value="ece">ECE</option>
+                    <option value="eee">EEE</option>
+                    <option value="it">IT</option>
+                </select>
+            </p>
+
+            <p>
+                Gender:
+                <input type="radio" id="male"
+                       name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female"
+                       name="gender" value="Female">
+                <label for="female">Female</label>
+            </p>
+
+            <p>
+                Hobbies:
+
+                <input type="checkbox" id="coding"
+                       name="hobbies" value="Coding">
+                <label for="coding">Coding</label>
+
+                <input type="checkbox" id="reading"
+                       name="hobbies" value="Reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="sports"
+                       name="hobbies" value="Sports">
+                <label for="sports">Sports</label>
+            </p>
+
+            <p>
+                <label for="rating">Satisfaction:</label>
+                <input type="range" id="rating"
+                       name="rating" min="0" max="10">
+            </p>
+
+            <p>
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo">
+            </p>
+
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"
+                          rows="4" cols="35"
+                          placeholder="Enter your message">
+                </textarea>
+            </p>
+
+        </fieldset>
+
+        <!-- PROGRESS SECTION -->
+        <p>
+            <label for="progress">Registration Progress:</label>
+            <progress id="progress" value="60" max="100">
+                60%
+            </progress>
+        </p>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <!-- AUDIO SECTION -->
+    <h2>Audio Element</h2>
+
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.ogg"
+                type="audio/ogg">
+
+        <source src="https://www.w3schools.com/html/horse.mp3"
+                type="audio/mpeg">
+
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- VIDEO SECTION -->
+    <h2>Video Element</h2>
+
+    <video width="400" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4"
+                type="video/mp4">
+
+        Your browser does not support the video element.
+    </video>
+
+    <!-- EMBED SECTION -->
+    <h2>Embed Element</h2>
+
+    <embed src="https://www.w3schools.com/html/mov_bbb.mp4"
+           type="video/mp4"
+           width="400"
+           height="250">
+
+    <!-- IFRAME SECTION -->
+    <h2>Iframe Element</h2>
+
+    <iframe
+        src="https://www.w3schools.com"
+        width="500"
+        height="250"
+        title="W3Schools Website">
+    </iframe>
+
+    <!-- FOOTER SECTION -->
+    <hr>
+
+    <p>
+        &copy; 2026 Chelsea Reena U.
+        HTML5 Web Technology Lab Exercise.
+    </p>
+
+</body>
+</html>
